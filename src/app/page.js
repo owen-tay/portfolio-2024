@@ -1,113 +1,125 @@
-import Image from 'next/image'
+import Image from "next/image";
+import ReactMarkdown from "react-markdown";
+
+import Card from "./components/card";
+import meImage from "../../public/me.jpg";
+import leavePile from "../../public/leavePile.svg";
+import rightLeaves from "../../public/rightLeaves.svg";
+import leftLeaves from "../../public/leftLeaves.svg";
+import botrightLeaves from "../../public/botrightLeaves.svg";
+import botleftLeaves from "../../public/botleftLeaves.svg";
+
+//Here is my markdown for my dropdowns
+
+const markdownContent = `
+# Salt River Shakedown
+
+_A simple website for the band that includes tour dates, music and videos._
+
+
+This website was built with next and uses tailwind css.
+ 
+
+Also features a Wordpress WooCommerce store for merch. Not currently live due to waiting on merch from the band and info on their next tour.
+
+
+`;
+
+
+// Markdown end 
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="relative">
+      <div className="relative h-screen border-2 border-green-owen">
+        <Image
+          className="absolute leavesRight hidden md:block   "
+          src={leftLeaves}
+          alt="Left Leaves"
+          layout="intrinsic"
+        />
+        <Image
+          className=" absolute right-0 hidden md:block "
+          src={rightLeaves}
+          alt="right leaves"
+          layout="intrinsic"
+        />
+        <Image
+          className=" absolute bottom-0 overflow-hidden right-0 hidden md:block leaveRotate2  "
+          src={botrightLeaves}
+          alt="bot right leaves"
+          layout="intrinsic"
+        />
+        <Image
+          className=" absolute bottom-0 overflow-hidden hidden md:block "
+          src={botleftLeaves}
+          alt="bot left"
+          layout="intrinsic"
+        />
+        <div className="flex justify-center items-center min-h-screen  ">
+          <div className="flex flex-col md:flex-row  justify-center max-w-4xl mx-auto p-4 gap-4 ">
+            <div className="md:w-1/2 flex justify-center relative p-4 rounded-lg">
+              <Image
+                className="rounded-full  scale-50 relative p-8 md:p-0 z-10 md:scale-75  "
+                src={meImage}
+                alt="Owen Taylor"
+                layout="intrinsic"
+              />
+              <Image
+                className="  bottom-2  sm:scale-105 md:scale-150 leaveRotate ease-in-out   
+         absolute z-0 "
+                src={leavePile}
+                alt="leave background"
+                layout="intrinsic"
+              />
+            </div>
+            <div className="md:w-2/4 ml-0 md:text-left md:ml-14 flex text-center   flex-col justify-center ">
+              <p className="text-3xl text-green-400 font-bold">Owen Taylor</p>
+              <p className="text-xl">Front End Web Developer</p>
+              <p className="text-xl">me@owentaylor.dev</p>
+
+              <div className=" w-full justify-center md:justify-start flex my-4">
+                <button
+                  className="rounded-2xl bg-green-400 p-2 border text-base-100 hover:scale-95 duration-100
+          
+          "
+                >
+                  Contact Me
+                </button>
+              </div>
+              
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+      <div className=" h-screen">
+        <Card
+          title="Salt river Shakedown"
+          description="Future website for the Glasgow based band, Salt River Shakedown."
+          imageURL="/srs.png"
+          link="https://srs-band-site.vercel.app/"
+          moreInfoContent={markdownContent}
+          
         />
-      </div>
+        
+        <Card
+          title="Salt river Shakedown"
+          description="Future website for the Glasgow based band, Salt River Shakedown."
+          imageURL="/srs.png"
+          link="https://srs-band-site.vercel.app/"
+          moreInfoContent='# Test Header
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+          This is a paragraph with **bold** and *italic* text.
+          
+          ## Another Header
+          
+          More text here.
+          
+          Normal text on a new line.'
+        />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
       </div>
     </main>
-  )
+  );
 }
