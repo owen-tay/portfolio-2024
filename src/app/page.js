@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown";
 import MyModal from "./components/Modal";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { Analytics } from "@vercel/analytics/react";
 
 import Card from "./components/card";
 import meImage from "../../public/me.jpg";
@@ -26,6 +27,8 @@ const scrollToTop = () => {
 export default function Home() {
   return (
     <main className="relative">
+      <Analytics />
+
       <div className="relative h-screen border-2 border-green-owen">
         <Image
           className="absolute leavesRight hidden md:block   "
