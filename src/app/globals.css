@@ -24,7 +24,7 @@ h1 {
 /* Media query*/
 @media (max-width: 768px) {
   .leaveRotate {
-    animation: leaveRotateSmall 15s ease-in-out infinite alternate;
+    animation: leaveRotateSmall 12s ease-in-out infinite alternate;
   }
 }
 
@@ -33,6 +33,17 @@ h1 {
     transform: rotate(0deg) scale(0.7);
   }
   50% {
-    transform: rotate(10deg) scale(0.7);
+    transform: rotate(14deg) scale(0.7);
+  }
+}
+
+.centerDiv {
+  #content {
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100px; /* Need a specific value to work */
   }
 }
