@@ -128,7 +128,7 @@ export default function Home() {
         <div className=" flex justify-center relative my-5">
 
         <a
-          href="https://www.design.owentaylor.dev">
+          href="https://design.owentaylor.dev/">
         
         <button
         className="rounded-2xl bg-green-400 border-neutral border-4 w-32 p-2 border text-base-100 hover:scale-95 duration-100"
