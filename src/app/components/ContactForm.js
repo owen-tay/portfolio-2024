@@ -7,7 +7,7 @@ const ContactForm = () => {
         <div className="max-w-lg mx-auto my-2 p-5 rounded-md shadow-sm">
           <div className="text-center">
             <h1 className="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
-              Contact Us
+              Contact Me
             </h1>
             <p className="text-gray-400 dark:text-gray-400">
               Fill up the form below to send us a message.

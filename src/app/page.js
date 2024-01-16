@@ -31,7 +31,7 @@ export default function Home() {
 
       <div className="relative h-screen border-2 border-green-owen">
         <Image
-          className="absolute leavesRight hidden md:block   "
+          className="absolute   leavesRight hidden md:block   "
           src={leftLeaves}
           alt="Left Leaves"
           layout="intrinsic"
@@ -125,6 +125,19 @@ export default function Home() {
         >
           Some of my work
         </h2>
+        <div className=" flex justify-center relative my-5">
+
+        <a
+          href="https://www.design.owentaylor.dev">
+        
+        <button
+        className="rounded-2xl bg-green-400 border-neutral border-4 w-32 p-2 border text-base-100 hover:scale-95 duration-100"
+  
+      >
+       Design Work
+      </button>
+      </a>
+      </div>
       </div>
       <div className=" flex flex-wrap justify-center  ">
         <Card
