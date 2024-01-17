@@ -126,26 +126,14 @@ export default function Home() {
           Some of my work
         </h2>
         <div className=" flex justify-center relative my-5">
-
-        <a
-          href="https://design.owentaylor.dev/">
-        
-        <button
-        className="rounded-2xl bg-green-400 border-neutral border-4 w-32 p-2 border text-base-100 hover:scale-95 duration-100"
-  
-      >
-       Design Work
-      </button>
-      </a>
-      </div>
+          <a href="https://design.owentaylor.dev/">
+            <button className="rounded-2xl bg-green-400 border-neutral w-32 h-14 shadow-xl  p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
+              Design Work
+            </button>
+          </a>
+        </div>
       </div>
       <div className=" flex flex-wrap justify-center  ">
-        <Card
-          title="Salt river Shakedown"
-          description="Future website for the Glasgow based band, Salt River Shakedown."
-          imageURL="/srs.png"
-          link="https://srs-band-site.vercel.app/"
-        />
 
         <Card
           title="Usercache"
@@ -160,11 +148,18 @@ export default function Home() {
           imageURL="/conjury.png"
           link="https://conjury.dev/"
         />
+<Card
+  title="DnD Tracker"
+  description="A react web app, built with firebase to allow DnD players to track their characters stats and items"
+  imageURL="/dnd.png"
+  link="https://dnd-inv-app.vercel.app/"
+/>
+
         <Card
-          title="DnD Tracker"
-          description="A react web app, built with firebase to allow DnD players to track their characters stats and items"
-          imageURL="/dnd.png"
-          link="https://dnd-inv-app.vercel.app/"
+          title="Salt river Shakedown"
+          description="Future website for the Glasgow based band - Salt River Shakedown."
+          imageURL="/srs.png"
+          link="https://srs-band-site.vercel.app/"
         />
         <Card
           title="Cycle Glasgow"
