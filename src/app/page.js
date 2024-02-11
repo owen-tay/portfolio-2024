@@ -13,6 +13,8 @@ import rightLeaves from "../../public/rightLeaves.svg";
 import leftLeaves from "../../public/leftLeaves.svg";
 import botrightLeaves from "../../public/botrightLeaves.svg";
 import botleftLeaves from "../../public/botleftLeaves.svg";
+import buttonLeaf from "../../public/buttonleaf.svg";
+
 import aboutMe from "../../public/aboutme.svg";
 import Link from "next/link";
 
@@ -125,16 +127,22 @@ export default function Home() {
         >
           Some of my work
         </h2>
-        <div className=" flex justify-center relative my-5">
-          <a href="https://design.owentaylor.dev/">
-            <button className="rounded-2xl bg-green-400 border-neutral w-32 h-14 shadow-xl  p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
-              Design Work
-            </button>
-          </a>
-        </div>
+        <div className="flex justify-center items-center my-5">
+      <div className="relative flex justify-center items-center w-full h-28"> 
+        <Image
+          className="absolute z-0 w-full h-full " 
+          src={buttonLeaf}
+          alt="Leaves"
+        />
+        <a href="https://design.owentaylor.dev/" className="z-10">
+          <button className="rounded-2xl bg-green-400 border-neutral w-32 h-14 shadow-xl p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
+            Design Work
+          </button>
+        </a>
       </div>
+    </div>
+    </div>
       <div className=" flex flex-wrap justify-center  ">
-
         <Card
           title="Usercache"
           description="Admin dashboard CRUD web app, built with NextJS and firebase. "
@@ -148,12 +156,12 @@ export default function Home() {
           imageURL="/conjury.png"
           link="https://conjury.dev/"
         />
-<Card
-  title="DnD Tracker"
-  description="A react web app, built with firebase to allow DnD players to track their characters stats and items"
-  imageURL="/dnd.png"
-  link="https://dnd-inv-app.vercel.app/"
-/>
+        <Card
+          title="DnD Tracker"
+          description="A react web app, built with firebase to allow DnD players to track their characters stats and items"
+          imageURL="/dnd.png"
+          link="https://dnd-inv-app.vercel.app/"
+        />
 
         <Card
           title="Salt river Shakedown"
