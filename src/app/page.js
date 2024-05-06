@@ -128,9 +128,9 @@ export default function Home() {
           Some of my work
         </h2>
         <div className="flex justify-center items-center my-5">
-      <div className="relative flex justify-center items-center w-full h-28"> 
+      <div className="relative gap-5 flex justify-center items-center w-full h-28"> 
         <Image
-          className="absolute z-0 w-full h-full " 
+          className="absolute z-0 w-full scale-110 h-full " 
           src={buttonLeaf}
           alt="Leaves"
         />
@@ -139,7 +139,14 @@ export default function Home() {
             Design Work
           </button>
         </a>
+        <a href="https://blog.owentaylor.dev/" className="z-10">
+          <button className="rounded-2xl bg-green-400 border-neutral w-32 h-14 shadow-xl p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
+            Blog
+          </button>
+        </a>
+        
       </div>
+      
     </div>
     </div>
       <div className=" flex flex-wrap justify-center  ">
