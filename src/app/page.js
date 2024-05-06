@@ -74,7 +74,7 @@ export default function Home() {
               />
             </div>
             <div className="md:w-2/4 ml-0 md:text-left md:ml-14 flex text-center   flex-col justify-center ">
-              <p className="text-3xl text-green-400 font-bold">Owen Taylor</p>
+              <p className="text-3xl text-secondary font-bold">Owen Taylor</p>
               <p className="text-xl">Front End Web Developer</p>
               <p className="text-xl">me@owentaylor.dev</p>
               <p className="text-xl">Glasgow</p>
@@ -85,14 +85,14 @@ export default function Home() {
                     rel="noopener noreferrer"
                     href="https://www.linkedin.com/in/owen-taylor-3b38ba272/"
                   >
-                    <FaLinkedin className="hover:scale-110 ease-in-out duration-75 hover:text-green-400" />
+                    <FaLinkedin className="hover:scale-110 ease-in-out duration-75 hover:text-secondary" />
                   </Link>
                   <Link
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://github.com/owen-tay"
                   >
-                    <FaGithub className="hover:scale-110 ease-in-out duration-75 hover:text-green-400" />
+                    <FaGithub className="hover:scale-110 ease-in-out duration-75 hover:text-secondary" />
                   </Link>
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function Home() {
         <div className="relative">
           <h2
             id="myWork"
-            className="text-center borer-2  my-12 text-3xl font-bold text-green-400"
+            className="text-center borer-2  my-12 text-3xl font-bold text-secondary"
           >
             About Me
           </h2>
@@ -123,7 +123,7 @@ export default function Home() {
         </div>
         <h2
           id="myWork"
-          className="text-center borer-2  my-10 text-3xl font-bold text-green-400"
+          className="text-center borer-2  my-10 text-3xl font-bold text-secondary"
         >
           Some of my work
         </h2>
@@ -135,12 +135,12 @@ export default function Home() {
           alt="Leaves"
         />
         <a href="https://design.owentaylor.dev/" className="z-10">
-          <button className="rounded-2xl bg-green-400 border-neutral w-32 h-14 shadow-xl p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
+          <button className="rounded-2xl bg-secondary border-neutral w-32 h-14 shadow-xl p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
             Design Work
           </button>
         </a>
         <a href="https://blog.owentaylor.dev/" className="z-10">
-          <button className="rounded-2xl bg-green-400 border-neutral w-32 h-14 shadow-xl p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
+          <button className="rounded-2xl bg-secondary border-neutral w-32 h-14 shadow-xl p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
             Blog
           </button>
         </a>
@@ -199,7 +199,7 @@ export default function Home() {
         />{" "}
         <div className="flex justify-center ">
           <button
-            className="rounded-2xl mt-10 bg-green-400 border-neutral border-4 w-32 p-2 border text-base-100 hover:scale-95 duration-100"
+            className="rounded-2xl mt-10 bg-secondary border-neutral border-4 w-32 p-2 border text-base-100 hover:scale-95 duration-100"
             onClick={scrollToTop} // Added onClick event here
           >
             Return To top

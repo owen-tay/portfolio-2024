@@ -13,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html data-theme="forest" lang="en">
       <Head>
         <title>Owen Taylor | Frontend Web Developer</title>
         <meta name="description" content="Glasgow based Frontend Web Developer" />

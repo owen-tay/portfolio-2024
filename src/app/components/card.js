@@ -31,7 +31,7 @@ export default function Card({ title, description, imageURL, link, moreInfoConte
         <div className="flex justify-center mt-3 items-center">
           
           <Link target="_blank" rel="noopener noreferrer" href={link}>
-            <button  className="rounded-2xl bg-green-400 border-neutral w-32 h-14 shadow-xl  p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
+            <button  className="rounded-2xl bg-secondary border-neutral w-32 h-14 shadow-xl  p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
               Visit Site
             </button>
           </Link>

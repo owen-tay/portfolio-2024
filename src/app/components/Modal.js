@@ -11,7 +11,7 @@ const MyModal = () => {
     <>
     <div className='mt-5'>
       <button
-        className="rounded-2xl bg-green-400 border-neutral border-4 w-32 p-2 border text-base-100 hover:scale-95 duration-100"
+        className="rounded-2xl bg-secondary border-neutral border-4 w-32 p-2 border text-base-100 hover:scale-95 duration-100"
         onClick={openModal}
       >
         Contact Me
