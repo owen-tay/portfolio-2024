@@ -130,7 +130,7 @@ export default function Home() {
         <div className="flex justify-center items-center my-5">
       <div className="relative gap-5 flex justify-center items-center w-full h-28"> 
         <Image
-          className="absolute z-0 w-full scale-110 h-full " 
+          className="absolute z-0 w-full  h-full " 
           src={buttonLeaf}
           alt="Leaves"
         />
