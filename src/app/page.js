@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { Analytics } from "@vercel/analytics/react";
 
 import Card from "./components/card";
-import meImage from "../../public/me.jpg";
+import meImage from "../../public/me.jpeg";
 import leavePile from "../../public/leavePile.svg";
 import rightLeaves from "../../public/rightLeaves.svg";
 import leftLeaves from "../../public/leftLeaves.svg";
@@ -111,11 +111,11 @@ export default function Home() {
             About Me
           </h2>
           <p className="text-xl m-16">
-            I recently graduated with an HND in web development from City of
+            Graduated with an HND in web development from City of
             Glasgow College. I am excited to embark on a rewarding career in the
             field. With experience in{" "}
             <span className="font-bold">
-              JavaScript, React, PHP and Web Design
+              JavaScript, React, Python and Web Design
             </span>{" "}
             with Figma and the Adobe Creative Suite , I am eager to contribute
             and continue to grow my skills.
@@ -150,6 +150,25 @@ export default function Home() {
     </div>
     </div>
       <div className=" flex flex-wrap justify-center  ">
+      <Card
+          title="OpenHowl"
+          description="An open-source, self-hosted Discord soundboard that can be controlled by a web app from anywhere by multiple users. It includes direct uploading from YouTube as well as effects and volume control."
+          imageURL="/openhowl.png"
+          link="https://github.com/owen-tay/OpenHowl"
+        />
+
+<Card
+          title="Conjury.dev"
+          description="Freelance Web Dev Agency website used for clients."
+          imageURL="/conjury.png"
+          link="https://conjury.dev/"
+        />
+                <Card
+          title="DnD Tracker"
+          description="A react web app, built with firebase to allow DnD players to track their characters stats and items"
+          imageURL="/dnd.png"
+          link="https://dnd-inv-app.vercel.app/"
+        />
         <Card
           title="Usercache"
           description="Admin dashboard CRUD web app, built with NextJS and firebase. "
@@ -157,18 +176,7 @@ export default function Home() {
           link="https://usercache.vercel.app/"
         />
 
-        <Card
-          title="Conjury.dev"
-          description="Freelance Web Dev Agency website used for clients."
-          imageURL="/conjury.png"
-          link="https://conjury.dev/"
-        />
-        <Card
-          title="DnD Tracker"
-          description="A react web app, built with firebase to allow DnD players to track their characters stats and items"
-          imageURL="/dnd.png"
-          link="https://dnd-inv-app.vercel.app/"
-        />
+
 
         <Card
           title="Salt river Shakedown"
@@ -176,12 +184,7 @@ export default function Home() {
           imageURL="/srs.png"
           link="https://srs-band-site.vercel.app/"
         />
-        <Card
-          title="Cycle Glasgow"
-          description="My college project, built to encourage cycling in Glasgow. Built with PHP and features a CRUD item listing system as well as a blog and uses a map API"
-          imageURL="/cycle.png"
-          link="https://cycleglasgow.yupstuff.net/index.php"
-        />
+
       </div>
       <div className="h-32 relative">
         {" "}
