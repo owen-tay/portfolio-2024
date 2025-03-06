@@ -152,7 +152,7 @@ export default function Home() {
       <div className=" flex flex-wrap justify-center  ">
       <Card
           title="OpenHowl"
-          description="An open-source, self-hosted Discord soundboard that can be controlled by a web app from anywhere by multiple users. It includes direct uploading from YouTube as well as effects and volume control."
+          description="An open-source, self-hosted Discord soundboard that can be controlled by a web app from anywhere by multiple users. It includes direct uploading from YouTube as well as effects and volume control. Read more on my blog and Github."
           imageURL="/openhowl.png"
           link="https://github.com/owen-tay/OpenHowl"
         />
