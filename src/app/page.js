@@ -110,7 +110,7 @@ export default function Home() {
           >
             About Me
           </h2>
-          <p className="text-xl m-16">
+          <p className="text-xl mx-14">
             Graduated with an HND in web development from City of
             Glasgow College. I am excited to embark on a rewarding career in the
             field. With experience in{" "}
