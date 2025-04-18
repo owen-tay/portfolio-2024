@@ -59,19 +59,19 @@ export default function Home() {
         <div className="flex justify-center items-start md:items-center min-h-screen  ">
           <div className="flex flex-col md:flex-row justify-normal  md:justify-center max-w-4xl mx-auto p-4 gap-4 ">
             <div className="md:w-1/2 flex justify-center relative p-4 rounded-lg">
-              <Image
-                className="rounded-full  scale-50 relative p-12 sm:p-20 md:p-0 z-10 md:scale-75  "
-                src={meImage}
-                alt="Owen Taylor"
-                layout="intrinsic"
-              />
-              <Image
-                className="  bottom-2  sm:scale-105 md:scale-150 leaveRotate ease-in-out   
-         absolute z-0 "
-                src={leavePile}
-                alt="leave background"
-                layout="intrinsic"
-              />
+                    <Image
+                      className="rounded-full  scale-50 relative p-12 sm:p-20 md:p-0 z-10 md:scale-75  "
+                      src={meImage}
+                      alt="Owen Taylor"
+                      layout="intrinsic"
+                    />
+                    <Image
+                      className="  bottom-2  sm:scale-105 md:scale-150 leaveRotate ease-in-out   
+              absolute z-0 "
+                      src={leavePile}
+                      alt="leave background"
+                      layout="intrinsic"
+                    />
             </div>
             <div className="md:w-2/4 ml-0 md:text-left md:ml-14 flex text-center   flex-col justify-center ">
               <p className="text-3xl text-secondary font-bold">Owen Taylor</p>
@@ -159,13 +159,13 @@ export default function Home() {
 
 <Card
           title="Conjury.dev"
-          description="Freelance Web Dev Agency website used for clients."
+          description="Freelance Web Dev Agency website used for attracting clients."
           imageURL="/conjury.png"
           link="https://conjury.dev/"
         />
                 <Card
           title="DnD Tracker"
-          description="A react web app, built with firebase to allow DnD players to track their characters stats and items"
+          description="React web app, built with firebase to allow DnD players to track their characters stats and items. Users to create a read-only version of their character sheet to share with others that update in real time. "
           imageURL="/dnd.png"
           link="https://dnd-inv-app.vercel.app/"
         />
