@@ -159,7 +159,7 @@ export default function Home() {
 
 <Card
           title="Conjury.dev"
-          description="Freelance Web Dev Agency website used for attracting clients."
+          description="Freelance Web Dev Agency website built with Next13 used for attracting clients." 
           imageURL="/conjury.png"
           link="https://conjury.dev/"
         />
