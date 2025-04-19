@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { Analytics } from "@vercel/analytics/react";
 
 import Card from "./components/card";
-import meImage from "../../public/me.jpeg";
+import meImage from "../../public/web-dev.svg";
 import leavePile from "../../public/leavePile.svg";
 import rightLeaves from "../../public/rightLeaves.svg";
 import leftLeaves from "../../public/leftLeaves.svg";
@@ -60,7 +60,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-normal  md:justify-center max-w-4xl mx-auto p-4 gap-4 ">
             <div className="md:w-1/2 flex justify-center relative p-4 rounded-lg">
                     <Image
-                      className="rounded-full  scale-50 relative p-12 sm:p-20 md:p-0 z-10 md:scale-75  "
+                      className=" scale-50 md:scale-50  relative z-10  "
                       src={meImage}
                       alt="Owen Taylor"
                       layout="intrinsic"
