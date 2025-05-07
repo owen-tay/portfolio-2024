@@ -60,7 +60,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-normal  md:justify-center max-w-4xl mx-auto p-4 gap-4 ">
             <div className="md:w-1/2 flex justify-center relative p-4 rounded-lg">
                     <Image
-                      className=" scale-50 md:scale-50  relative z-10  "
+                      className=" scale-50 md:scale-50  relative z-10 fill- "
                       src={meImage}
                       alt="Owen Taylor"
                       layout="intrinsic"

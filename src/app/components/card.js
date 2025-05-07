@@ -15,7 +15,7 @@ export default function Card({
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="flex min-h-96 flex-col max-w-md h-full rounded-xl overflow-hidden m-4 dark:bg-neutral border-green-owen shadow-xl">
+    <div className="flex min-h-96 flex-col max-w-md h-full rounded-xl overflow-hidden m-4 bg-neutral dark:bg-neutral border-green-owen shadow-xl">
       <div className="w-full h-52 relative">
         <Image
           src={imageURL}
