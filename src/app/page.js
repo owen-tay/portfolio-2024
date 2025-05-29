@@ -59,19 +59,19 @@ export default function Home() {
         <div className="flex justify-center items-start md:items-center min-h-screen  ">
           <div className="flex flex-col md:flex-row justify-normal  md:justify-center max-w-4xl mx-auto p-4 gap-4 ">
             <div className="md:w-1/2 flex justify-center relative p-4 rounded-lg">
-                    <Image
-                      className=" scale-50 md:scale-50  relative z-10 fill- "
-                      src={meImage}
-                      alt="Owen Taylor"
-                      layout="intrinsic"
-                    />
-                    <Image
-                      className="  bottom-2  sm:scale-105 md:scale-150 leaveRotate ease-in-out   
+              <Image
+                className=" scale-50 md:scale-50  relative z-10 fill- "
+                src={meImage}
+                alt="Owen Taylor"
+                layout="intrinsic"
+              />
+              <Image
+                className="  bottom-2  sm:scale-105 md:scale-150 leaveRotate ease-in-out   
               absolute z-0 "
-                      src={leavePile}
-                      alt="leave background"
-                      layout="intrinsic"
-                    />
+                src={leavePile}
+                alt="leave background"
+                layout="intrinsic"
+              />
             </div>
             <div className="md:w-2/4 ml-0 md:text-left md:ml-14 flex text-center   flex-col justify-center ">
               <p className="text-3xl text-secondary font-bold">Owen Taylor</p>
@@ -111,14 +111,13 @@ export default function Home() {
             About Me
           </h2>
           <p className="text-xl mx-14">
-            Graduated with an HND in web development from City of
-            Glasgow College. I am excited to embark on a rewarding career in the
-            field. With experience in{" "}
+            I’m looking to build a career in web development, drawing on
+            experience with{" "}
             <span className="font-bold">
-              JavaScript, React, Python and Web Design
+              JavaScript, React, Python, and Web Design
             </span>{" "}
-            with Figma and the Adobe Creative Suite , I am eager to contribute
-            and continue to grow my skills.
+            using tools like Figma and Adobe Creative Suite. I’m focused on
+            contributing effectively while continuing to develop my skills.
           </p>
         </div>
         <h2
@@ -128,42 +127,40 @@ export default function Home() {
           Some of my work
         </h2>
         <div className="flex justify-center items-center my-5">
-      <div className="relative gap-5 flex justify-center items-center w-full h-28"> 
-        <Image
-          className="absolute z-0 w-full  h-full " 
-          src={buttonLeaf}
-          alt="Leaves"
-        />
-        <a href="https://design.owentaylor.dev/" className="z-10">
-          <button className="rounded-2xl bg-secondary border-neutral w-32 h-14 shadow-xl p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
-            Design Work
-          </button>
-        </a>
-        <a href="https://blog.owentaylor.dev/" className="z-10">
-          <button className="rounded-2xl bg-secondary border-neutral w-32 h-14 shadow-xl p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
-            Blog
-          </button>
-        </a>
-        
+          <div className="relative gap-5 flex justify-center items-center w-full h-28">
+            <Image
+              className="absolute z-0 w-full  h-full "
+              src={buttonLeaf}
+              alt="Leaves"
+            />
+            <a href="https://design.owentaylor.dev/" className="z-10">
+              <button className="rounded-2xl bg-secondary border-neutral w-32 h-14 shadow-xl p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
+                Design Work
+              </button>
+            </a>
+            <a href="https://blog.owentaylor.dev/" className="z-10">
+              <button className="rounded-2xl bg-secondary border-neutral w-32 h-14 shadow-xl p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
+                Blog
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
-      
-    </div>
-    </div>
       <div className=" flex flex-wrap justify-center  ">
-      <Card
+        <Card
           title="OpenHowl"
           description="An open-source, self-hosted Discord soundboard that can be controlled by a web app from anywhere by multiple users. It includes direct uploading from YouTube as well as effects and volume control. Read more on my blog and Github."
           imageURL="/openhowl.png"
           link="https://github.com/owen-tay/OpenHowl"
         />
 
-<Card
+        <Card
           title="Conjury.dev"
-          description="Freelance Web Dev Agency website built with Next13 used for attracting clients." 
+          description="Freelance Web Dev Agency website built with Next13 used for attracting clients."
           imageURL="/conjury.png"
           link="https://conjury.dev/"
         />
-                <Card
+        <Card
           title="DnD Tracker"
           description="React web app, built with firebase to allow DnD players to track their characters stats and items. Users to create a read-only version of their character sheet to share with others that update in real time. "
           imageURL="/dnd.png"
@@ -176,15 +173,12 @@ export default function Home() {
           link="https://usercache.vercel.app/"
         />
 
-
-
         <Card
           title="Salt river Shakedown"
           description="Future website for the Glasgow based band - Salt River Shakedown."
           imageURL="/srs.png"
           link="https://srs-band-site.vercel.app/"
         />
-
       </div>
       <div className="h-32 relative">
         {" "}
