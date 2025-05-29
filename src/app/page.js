@@ -110,14 +110,15 @@ export default function Home() {
           >
             About Me
           </h2>
-          <p className="text-xl mx-14">
-            I’m looking to build a career in web development, drawing on
-            experience with{" "}
+          <p className="text-xl mx-20">
+            I’m looking to build a career in web development, with practical
+            experience in{" "}
             <span className="font-bold">
               JavaScript, React, Python, and Web Design
             </span>{" "}
-            using tools like Figma and Adobe Creative Suite. I’m focused on
-            contributing effectively while continuing to develop my skills.
+            using tools like Figma and Adobe Creative Suite. Currently
+            developing projects that demonstrate front-end proficiency and a
+            solid grasp of modern development workflows.
           </p>
         </div>
         <h2
