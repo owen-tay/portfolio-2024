@@ -47,3 +47,9 @@ h1 {
     width: 100px; /* Need a specific value to work */
   }
 }
+
+.gradientMain {
+background: #171212;
+background: radial-gradient(circle,rgba(23, 18, 18, 1) 25%, rgba(15, 109, 84, 0.24) 99%, rgba(255, 255, 255, 0) 100%);
+}
+

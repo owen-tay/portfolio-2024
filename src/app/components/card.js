@@ -11,11 +11,12 @@ export default function Card({
   imageURL,
   link,
   moreInfoContent,
+  linkText,
 }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="flex min-h-96 flex-col max-w-md h-full rounded-xl overflow-hidden m-4 bg-neutral dark:bg-neutral border-green-owen shadow-xl">
+    <div className="flex min-h-96 flex-col max-w-md h-full rounded-xl overflow-hidden m-4  border-neutral gradientMain  border-2  shadow-xl">
       <div className="w-full h-52 relative">
         <Image
           src={imageURL}
@@ -36,8 +37,8 @@ export default function Card({
             href={link}
             className="w-32"
           >
-            <button className="w-full h-14 rounded-2xl bg-secondary border-neutral shadow-xl p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
-              Visit Site
+            <button className="w-full h-16 rounded-2xl bg-secondary border-neutral shadow-xl p-2 border-4 text-base-100 hover:scale-95 duration-100 ease-in-out">
+              {linkText ? linkText : "View Site" }
             </button>
           </Link>
         </div>

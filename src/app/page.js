@@ -31,9 +31,9 @@ export default function Home() {
     <main className="relative">
       <Analytics />
 
-      <div className="relative h-screen border-2 border-green-owen">
+      <div className="relative h-screen border-2 border-green-owen gradientMain ">
         <Image
-          className="absolute   leavesRight hidden md:block   "
+          className="absolute   leavesRight hidden md:block     "
           src={leftLeaves}
           alt="Left Leaves"
           layout="intrinsic"
@@ -60,7 +60,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-normal  md:justify-center max-w-4xl mx-auto p-4 gap-4 ">
             <div className="md:w-1/2 flex justify-center relative p-4 rounded-lg">
               <Image
-                className=" scale-50 md:scale-50  relative z-10 fill- "
+                className=" scale-50 md:scale-50  relative z-10 "
                 src={meImage}
                 alt="Owen Taylor"
                 layout="intrinsic"
@@ -153,6 +153,7 @@ export default function Home() {
           description="An open-source, self-hosted Discord soundboard that can be controlled by a web app from anywhere by multiple users. It includes direct uploading from YouTube as well as effects and volume control. Read more on my blog and Github."
           imageURL="/openhowl.png"
           link="https://github.com/owen-tay/OpenHowl"
+          linkText={"View On GitHub"}
         />
 
         <Card
