@@ -3,6 +3,7 @@ import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import MyModal from "./components/Modal";
 import { FaLinkedin } from "react-icons/fa";
+import { FaPen } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -80,20 +81,21 @@ export default function Home() {
               <p className="text-xl">Glasgow</p>
               <div>
                 <div className="flex justify-center md:justify-normal text-4xl mt-4 gap-3">
-                  <Link
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://www.linkedin.com/in/owen-taylor-3b38ba272/"
-                  >
-                    <FaLinkedin className="hover:scale-110 ease-in-out duration-75 hover:text-secondary" />
-                  </Link>
-                  <Link
+                                    <Link
                     target="_blank"
                     rel="noopener noreferrer"
                     href="https://github.com/owen-tay"
                   >
                     <FaGithub className="hover:scale-110 ease-in-out duration-75 hover:text-secondary" />
                   </Link>
+                  <Link
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://blog.owentaylor.dev//"
+                  >
+                    <FaPen className="hover:scale-100 scale-90 ease-in-out duration-75 hover:text-secondary" />
+                  </Link>
+
                 </div>
               </div>
 
